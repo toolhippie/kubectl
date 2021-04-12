@@ -1,7 +1,7 @@
 def main(ctx):
 	return [
 		docker(ctx, 'amd64'),
-		docker(ctx, 'arm'),
+		#docker(ctx, 'arm'),
 		docker(ctx, 'arm64'),
 
 		manifest(ctx),
