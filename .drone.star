@@ -124,7 +124,7 @@ def manifest(ctx):
 					},
 					'platforms': [
 						'linux/amd64',
-						'linux/arm',
+						#'linux/arm',
 						'linux/arm64',
 					],
 					'target': 'toolhippie/%s:latest' % ctx.repo.name,
@@ -135,7 +135,7 @@ def manifest(ctx):
 		],
 		'depends_on': [
 			'amd64',
-			'arm',
+			#'arm',
 			'arm64',
 		],
 		'trigger': {
