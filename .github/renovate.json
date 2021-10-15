@@ -4,9 +4,20 @@
         "github>webhippie/renovate:docker"
     ],
     "packageRules": [{
-        "groupName": "kubectl packages",
-        "matchDatasources": [
-            "github-releases"
-        ]
-    }]
+            "groupName": "kubectl packages",
+            "matchDatasources": [
+                "github-releases"
+            ]
+        },
+        {
+            "groupName": "version prefix",
+            "matchDatasources": [
+                "github-releases"
+            ],
+            "packageNames": [
+                "kubernetes-sigs/kustomize"
+            ],
+            "extractVersion": "^kustomize\\/v(?<version>\\d+\\.\\d+\\.\\d+)$"
+        }
+    ]
 }

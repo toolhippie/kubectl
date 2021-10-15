@@ -1,8 +1,9 @@
 FROM webhippie/golang:1.16 AS build
 
-ENV KUSTOMIZE_VERSION=kustomize/v4.2.0
+# renovate: datasource=github-releases depName=kubernetes-sigs/kustomize
+ENV KUSTOMIZE_VERSION=4.2.0
 
-RUN git clone -b ${KUSTOMIZE_VERSION} https://github.com/kubernetes-sigs/kustomize.git /srv/app/src && \
+RUN git clone -b kustomize/v${KUSTOMIZE_VERSION} https://github.com/kubernetes-sigs/kustomize.git /srv/app/src && \
   cd /srv/app/src/kustomize && \
   GO111MODULE=on go install
 
