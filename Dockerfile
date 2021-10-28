@@ -11,7 +11,7 @@ FROM webhippie/alpine:latest
 ENTRYPOINT [""]
 
 # renovate: datasource=github-releases depName=kubernetes/kubernetes
-ENV KUBECTL_VERSION=1.22.2
+ENV KUBECTL_VERSION=1.22.3
 
 ARG TARGETARCH=amd64
 
