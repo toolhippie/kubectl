@@ -1,7 +1,7 @@
 FROM webhippie/golang:1.17 AS build
 
 # renovate: datasource=github-releases depName=kubernetes-sigs/kustomize
-ENV KUSTOMIZE_VERSION=4.5.2
+ENV KUSTOMIZE_VERSION=4.5.3
 
 RUN git clone -b kustomize/v${KUSTOMIZE_VERSION} https://github.com/kubernetes-sigs/kustomize.git /srv/app/src && \
   cd /srv/app/src/kustomize && \
