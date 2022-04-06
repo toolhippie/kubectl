@@ -17,6 +17,7 @@ ARG TARGETARCH
 
 RUN apk update && \
   apk upgrade && \
+  apk add --no-cache gnupg && \
   case "${TARGETARCH}" in \
 		'amd64') \
 			curl -sSLo /usr/bin/kubectl https://storage.googleapis.com/kubernetes-release/release/v${KUBECTL_VERSION}/bin/linux/amd64/kubectl; \
