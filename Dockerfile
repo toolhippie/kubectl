@@ -50,6 +50,6 @@ RUN apk update && \
   rm -rf /var/cache/apk/*
 
 COPY --from=build /srv/app/bin/kustomize /usr/bin/
-COPY --from=build /srv/app/bin/ksops /usr/local/config/kustomize/plugin/viaduct.ai/v1/ksops/ksops
+COPY --from=build /srv/app/bin/kustomize-sops /usr/local/config/kustomize/plugin/viaduct.ai/v1/ksops/ksops
 COPY --from=build /tmp/helm /usr/bin/helm
 COPY --from=build /tmp/kubectl /usr/bin/kubectl
