@@ -1,4 +1,4 @@
-FROM webhippie/golang:1.18 AS build
+FROM webhippie/golang:1.19 AS build
 
 # renovate: datasource=github-releases depName=kubernetes-sigs/kustomize
 ENV KUSTOMIZE_VERSION=4.5.7
