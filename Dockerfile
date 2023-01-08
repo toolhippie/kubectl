@@ -40,7 +40,7 @@ RUN case "${TARGETARCH}" in \
 	chmod +x /tmp/kubectl
 
 
-FROM webhippie/alpine:3.16
+FROM webhippie/alpine:3.17
 ENTRYPOINT [""]
 ENV XDG_CONFIG_HOME=/usr/local/config
 
