@@ -1,7 +1,7 @@
 FROM webhippie/golang:1.19 AS build
 
 # renovate: datasource=github-releases depName=kubernetes-sigs/kustomize
-ENV KUSTOMIZE_VERSION=4.5.7
+ENV KUSTOMIZE_VERSION=5.0.0
 
 # renovate: datasource=github-releases depName=viaduct-ai/kustomize-sops
 ENV KSOPS_VERSION=4.1.0
