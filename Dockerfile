@@ -10,7 +10,7 @@ ENV KSOPS_VERSION=4.1.0
 ENV KUBECTL_VERSION=1.26.2
 
 # renovate: datasource=github-releases depName=helm/helm
-ENV HELM_VERSION=3.11.1
+ENV HELM_VERSION=3.11.2
 
 RUN git clone -b kustomize/v${KUSTOMIZE_VERSION} https://github.com/kubernetes-sigs/kustomize.git /srv/app/src && \
   cd /srv/app/src/kustomize && \
