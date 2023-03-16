@@ -20,5 +20,8 @@
             ],
             "extractVersion": "^kustomize\\/v(?<version>\\d+\\.\\d+\\.\\d+)$"
         }
+    ],
+    "ignoreDeps": [
+        "docker/build-push-action"
     ]
 }
