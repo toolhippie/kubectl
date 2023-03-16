@@ -1,4 +1,4 @@
-FROM webhippie/golang:1.20 AS build
+FROM ghcr.io/webhippie/golang:1.20 AS build
 
 # renovate: datasource=github-releases depName=kubernetes-sigs/kustomize
 ENV KUSTOMIZE_VERSION=5.0.1
@@ -40,7 +40,7 @@ RUN case "${TARGETARCH}" in \
 	chmod +x /tmp/kubectl
 
 
-FROM webhippie/alpine:3.17
+FROM ghcr.io/webhippie/alpine:3.17
 ENTRYPOINT [""]
 ENV XDG_CONFIG_HOME=/usr/local/config
 
