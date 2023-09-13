@@ -7,7 +7,7 @@ ENV KUSTOMIZE_VERSION=5.1.1
 ENV KSOPS_VERSION=4.2.1
 
 # renovate: datasource=github-releases depName=kubernetes/kubernetes
-ENV KUBECTL_VERSION=1.28.1
+ENV KUBECTL_VERSION=1.28.2
 
 # renovate: datasource=github-releases depName=helm/helm
 ENV HELM_VERSION=3.12.3
