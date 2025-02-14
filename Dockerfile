@@ -45,7 +45,7 @@ RUN case "${TARGETARCH}" in \
 	esac && \
 	chmod +x /tmp/kubectl
 
-FROM ghcr.io/dockhippie/alpine:3.20
+FROM ghcr.io/dockhippie/alpine:3.21
 ENTRYPOINT [""]
 ENV XDG_CONFIG_HOME=/usr/local/config
 
