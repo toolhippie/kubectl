@@ -13,7 +13,7 @@ ENV KUBECTL_VERSION=1.32.2
 ENV HELM_VERSION=3.17.1
 
 # renovate: datasource=github-releases depName=fluxcd/flux2
-ENV FLUXCD_VERSION=2.5.0
+ENV FLUXCD_VERSION=2.5.1
 
 RUN git clone -b kustomize/v${KUSTOMIZE_VERSION} https://github.com/kubernetes-sigs/kustomize.git /srv/app/src && \
   cd /srv/app/src/kustomize && \
