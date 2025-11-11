@@ -5,11 +5,10 @@
     ],
     "packageRules": [
         {
-            "groupName": "version prefix",
             "matchDatasources": [
                 "github-releases"
             ],
-            "packageNames": [
+            "matchPackageNames": [
                 "kubernetes-sigs/kustomize"
             ],
             "extractVersion": "^kustomize\\/v(?<version>\\d+\\.\\d+\\.\\d+)$"
