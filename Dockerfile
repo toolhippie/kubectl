@@ -10,10 +10,10 @@ ENV KSOPS_VERSION=4.4.0
 ENV KUBECTL_VERSION=1.34.2
 
 # renovate: datasource=github-releases depName=helm/helm
-ENV HELM_VERSION=4.0.0
+ENV HELM_VERSION=4.0.1
 
 # renovate: datasource=github-releases depName=fluxcd/flux2
-ENV FLUXCD_VERSION=2.7.4
+ENV FLUXCD_VERSION=2.7.5
 
 # renovate: datasource=github-releases depName=vmware-tanzu/velero
 ENV VELERO_VERSION=1.17.1
