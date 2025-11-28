@@ -1,4 +1,4 @@
-FROM ghcr.io/dockhippie/golang:1.23@sha256:ba9f30070709364682d6b6479e3aee1fb1717ccd65ecd09104aa0e1aac17a36d AS build
+FROM ghcr.io/dockhippie/golang:1.23@sha256:384a2beb92828b3f2aa019b28673ef4a6f61df4451905f39a7574c993d414e18 AS build
 
 # renovate: datasource=github-releases depName=kubernetes-sigs/kustomize
 ENV KUSTOMIZE_VERSION=5.8.0
@@ -51,7 +51,7 @@ RUN case "${TARGETARCH}" in \
 	esac && \
 	chmod +x /tmp/kubectl
 
-FROM ghcr.io/dockhippie/alpine:3.22@sha256:555ec6b7c1727c1fc1be25d4e4cfb0e8bdab9ab1931a20365a873e5e21e4ff18
+FROM ghcr.io/dockhippie/alpine:3.22@sha256:5b36d6c9994b3dbde7ff8e6140558b673d4ceb4d794c586073b934585c064a37
 ENTRYPOINT [""]
 ENV XDG_CONFIG_HOME=/usr/local/config
 
