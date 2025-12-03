@@ -1,4 +1,4 @@
-FROM ghcr.io/dockhippie/golang:1.23@sha256:8672fd7752acad8cdfb012564105d69bee0e75c81b2df58ec28a80f03c9c5cb7 AS build
+FROM ghcr.io/dockhippie/golang:1.23@sha256:c216fc815d94e3ca49a7db76b45742d1ded5237eb870bfa2441c3642835ac107 AS build
 
 # renovate: datasource=github-releases depName=kubernetes-sigs/kustomize
 ENV KUSTOMIZE_VERSION=5.8.0
