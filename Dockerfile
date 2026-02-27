@@ -13,7 +13,7 @@ ENV KUBECTL_VERSION=1.35.2
 ENV HELM_VERSION=4.1.1
 
 # renovate: datasource=github-releases depName=fluxcd/flux2
-ENV FLUXCD_VERSION=2.8.0
+ENV FLUXCD_VERSION=2.8.1
 
 # renovate: datasource=github-releases depName=vmware-tanzu/velero
 ENV VELERO_VERSION=1.17.2
