@@ -10,7 +10,7 @@ ENV KSOPS_VERSION=4.4.0
 ENV KUBECTL_VERSION=1.35.2
 
 # renovate: datasource=github-releases depName=helm/helm
-ENV HELM_VERSION=4.1.1
+ENV HELM_VERSION=4.1.3
 
 # renovate: datasource=github-releases depName=fluxcd/flux2
 ENV FLUXCD_VERSION=2.8.1
