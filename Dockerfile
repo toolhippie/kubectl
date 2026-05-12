@@ -7,13 +7,13 @@ ENV KUSTOMIZE_VERSION=5.8.1
 ENV KSOPS_VERSION=4.5.1
 
 # renovate: datasource=github-releases depName=kubernetes/kubernetes
-ENV KUBECTL_VERSION=1.36.0
+ENV KUBECTL_VERSION=1.36.1
 
 # renovate: datasource=github-releases depName=helm/helm
 ENV HELM_VERSION=4.1.4
 
 # renovate: datasource=github-releases depName=fluxcd/flux2
-ENV FLUXCD_VERSION=2.8.6
+ENV FLUXCD_VERSION=2.8.7
 
 # renovate: datasource=github-releases depName=vmware-tanzu/velero
 ENV VELERO_VERSION=1.18.0
