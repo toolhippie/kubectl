@@ -16,7 +16,7 @@ ENV HELM_VERSION=4.2.0
 ENV FLUXCD_VERSION=2.8.7
 
 # renovate: datasource=github-releases depName=vmware-tanzu/velero
-ENV VELERO_VERSION=1.18.0
+ENV VELERO_VERSION=1.18.1
 
 RUN git clone -b kustomize/v${KUSTOMIZE_VERSION} https://github.com/kubernetes-sigs/kustomize.git /srv/app/src && \
   cd /srv/app/src/kustomize && \
