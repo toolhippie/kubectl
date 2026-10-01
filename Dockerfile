@@ -1,7 +1,7 @@
 FROM ghcr.io/dockhippie/golang:1.26@sha256:2c793d6edaa3aa629b956b72eaa5eb92933ae789bd41782ef5379aa513919a63 AS build
 
 # renovate: datasource=github-releases depName=kubernetes-sigs/kustomize
-ENV KUSTOMIZE_VERSION=5.8.1
+ENV KUSTOMIZE_VERSION=5.8.2
 
 # renovate: datasource=github-releases depName=viaduct-ai/kustomize-sops
 ENV KSOPS_VERSION=4.5.1
